@@ -1,0 +1,13 @@
+<div class="girdDisplay">
+    <div class="foodSlide center" *ngFor="let food of foods; let i = index;">
+        <div class="imageDiv marginAlign"><img [src]="food.image" alt="" class="foodImage"></div>
+        <div class="foodDetails">
+            <label for="" class="FoodName marginAlign"><h3 class="marginAlign"> {{food.name}} </h3></label><br>
+            <label for="" class="FoodCalories marginAlign"> Calories : {{food.calories}} </label>
+            <div class="quantityInput marginAlign">
+                <input type="text" class="foodQuantity" placeholder="Enter food quantity.." [(ngModel)]="FoodQuantity">
+                <button class="addFood" style="margin: 5px;" (click)="addToTodayFood(i)"> Add </button>
+            </div>
+        </div>
+    </div>
+</div>

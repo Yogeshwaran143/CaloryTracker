@@ -1,0 +1,45 @@
+.foodSlide {
+    height: auto;
+    margin: 10px;
+    width: 300px;
+    border: black solid 1px;
+}
+
+.girdDisplay {
+    display: grid;
+    margin: 10px;
+    margin-left: 300px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.foodSlide {
+    flex-direction: column;
+}
+
+.marginAlign {
+    margin: 10px;
+    margin-left: 80px;
+}
+
+.foodImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .girdDisplay {
+        margin: -2px;
+        margin-left: auto;
+        justify-content: center;
+        align-content: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
